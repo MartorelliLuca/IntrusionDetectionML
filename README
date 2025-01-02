@@ -1,0 +1,39 @@
+# NSL-KDD Dataset for Intrusion Detection
+
+Il dataset **NSL-KDD** (file: `KDDTrainClean.csv`) rappresenta un benchmark per lo sviluppo e la valutazione di sistemi di *Intrusion Detection*. Questo dataset contiene informazioni sui flussi di traffico di rete diretti verso un'infrastruttura IT. Ogni flusso è etichettato come:
+- **Normale**
+- **Attacco**, con specifiche tipologie.
+
+La colonna `label` del dataset rappresenta l'etichetta associata a ciascun flusso.
+
+## Obiettivo
+
+L'obiettivo è addestrare modelli di *Machine Learning* (ML) per i seguenti task:
+
+### Task T7a: Classificazione Binaria
+- **Descrizione**: Classificare i flussi come **normali** o **attacchi**.
+- **Requisiti**:
+  - Utilizzare almeno **due diversi modelli di Machine Learning**.
+  - Considerare come "attacco" tutto ciò che non è etichettato come `normal` nel dataset.
+
+## Istruzioni per l'Utilizzo
+1. **Preparazione del Dataset**:
+   - Scaricare il file `KDDTrainClean.csv`.
+   - Esplorare e analizzare il dataset per comprendere le caratteristiche e la distribuzione delle etichette.
+
+2. **Sviluppo dei Modelli**:
+   - Implementare almeno due modelli di Machine Learning (ad esempio, **Random Forest**, **Support Vector Machine**, ecc.).
+   - Valutare la performance dei modelli utilizzando metriche come **Accuracy**, **Precision**, **Recall** e **F1-score**.
+
+3. **Validazione**:
+   - Eseguire la validazione incrociata per garantire la robustezza dei modelli.
+   - Confrontare le performance dei modelli per identificare il migliore.
+
+## Risultati Attesi
+- Modelli ML addestrati e valutati per la classificazione binaria (normale vs. attacco).
+- Report che evidenzi le performance e il confronto tra i modelli utilizzati.
+
+---
+
+**Nota:** Assicurarsi di utilizzare tecniche appropriate di preprocessing (normalizzazione, gestione dei valori mancanti, ecc.) per ottenere risultati accurati e affidabili.
+
